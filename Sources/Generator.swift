@@ -218,7 +218,7 @@ private extension Generator {
     static func validateDigits(_ digits: Int) -> Bool {
         // https://tools.ietf.org/html/rfc4226#section-5.3 states "Implementations MUST extract a
         // 6-digit code at a minimum and possibly 7 and 8-digit codes."
-        let acceptableDigits = 6...8
+        let acceptableDigits = 4...8
         return acceptableDigits.contains(digits)
     }
 
